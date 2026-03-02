@@ -1,24 +1,32 @@
-Palindrome Checker Management System
-Objective
+UC2: Print a Hardcoded Palindrome Result
+Goal
 
-To create a Java console application that starts properly and displays a welcome message. This project follows a structured use-case approach and will later include palindrome checking functionality.
+Display whether a hardcoded string is a palindrome.
 
-Project Flow
+Actor
 
-Create the main class.
+User
 
-Start execution using the main() method.
+Flow
 
-Display welcome message.
+Program starts
 
-Show application version.
+Hardcoded string is checked
 
-Confirm system initialization.
+Result is printed
 
-Use Case 1 – Application Entry
+Program exits
 
-Displays system welcome message
+Key Concepts Used
 
-Shows version (1.0)
+Class – Program structure in Java
 
-Confirms successful startup
+Main Method – Entry point (public static void main(String[] args))
+
+Static Keyword – Allows JVM to call main()
+
+String – Stores text data
+
+For Loop – Iterates up to half of the string length
+
+Condition Checking – Compares characters from both end
