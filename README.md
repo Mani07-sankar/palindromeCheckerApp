@@ -1,32 +1,18 @@
-UC2: Print a Hardcoded Palindrome Result
-Goal
+## UC3: Palindrome Check Using String Reverse
 
-Display whether a hardcoded string is a palindrome.
+### Goal
+Check whether a string is a palindrome by reversing it.
 
-Actor
+### Flow
+1. Reverse the string using a loop
+2. Compare the original and reversed string
+3. Display the result
 
-User
+Key Concepts
+- Loop (for loop)
+- String immutability
+- String concatenation
+- equals() method
 
-Flow
-
-Program starts
-
-Hardcoded string is checked
-
-Result is printed
-
-Program exits
-
-Key Concepts Used
-
-Class – Program structure in Java
-
-Main Method – Entry point (public static void main(String[] args))
-
-Static Keyword – Allows JVM to call main()
-
-String – Stores text data
-
-For Loop – Iterates up to half of the string length
-
-Condition Checking – Compares characters from both end
+### Data Structure
+String
