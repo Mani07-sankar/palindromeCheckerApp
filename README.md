@@ -1,21 +1,90 @@
-## UC6 – Queue + Stack Based Palindrome Check
+# Palindrome Checker App
 
-This use case validates whether a string is a palindrome using two data structures: **Queue** and **Stack**.
+## UC7 – Deque-Based Optimized Palindrome Checker
 
-### Goal
-Demonstrate the difference between FIFO and LIFO using Queue and Stack to validate palindrome logic.
+### Objective
 
-### Flow
-1. Enqueue characters into the Queue.
-2. Push characters into the Stack.
-3. Compare dequeue (Queue) with pop (Stack).
-4. Display whether the string is a palindrome.
+The objective of this use case is to check whether a given string is a palindrome using a **Deque (Double Ended Queue)**.
+Instead of reversing the string or using extra stacks, this method compares characters directly from the **front and rear** of the data structure.
 
-### Key Concepts Used
-- **Queue (FIFO)** – First In First Out data structure.
-- **Stack (LIFO)** – Last In First Out data structure.
-- **Enqueue & Dequeue Operations**
-- **Logical Comparison**
+---
 
-### Data Structures
-Queue, Stack
+## Concept Used
+
+### Deque (Double Ended Queue)
+
+A **Deque** is a data structure that allows insertion and deletion of elements from **both ends**.
+
+Operations used in this program:
+
+* `addLast()` – Insert character at the rear of the deque
+* `removeFirst()` – Remove character from the front
+* `removeLast()` – Remove character from the rear
+
+This allows efficient comparison of characters from both ends of the string.
+
+---
+
+## Flow / Algorithm
+
+1. Read a string input from the user.
+2. Insert all characters of the string into a **Deque**.
+3. Remove characters from the **front and rear** of the deque.
+4. Compare the two characters.
+5. If the characters are different → the string is **not a palindrome**.
+6. If all characters match → the string is a **palindrome**.
+
+---
+
+## Data Structure Used
+
+Deque (ArrayDeque implementation in Java)
+
+---
+
+## Time Complexity
+
+Time Complexity: **O(n)**
+Space Complexity: **O(n)**
+
+---
+
+## Example
+
+Input
+
+madam
+
+Output
+
+Palindrome
+
+---
+
+Input
+
+hello
+
+Output
+
+Not Palindrome
+
+---
+
+## Java Concepts Used
+
+* Java Collections Framework
+* Deque Interface
+* ArrayDeque Implementation
+* Loops
+* Conditional Statements
+* Scanner for User Input
+
+
+
+---
+
+## Author
+
+Developer
+
